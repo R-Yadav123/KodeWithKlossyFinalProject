@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project 2021</title>
+
+  <!--Links style.css to HTML-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!--Links jQuery library to HTML-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>Standard Navbar</title>
+
+  
+</head>
+<body>
+ 
+<div>
+<nav class="navbar nav-color" variant="light">
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navLinks">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+            </button>
+                <img src="/Assets/logo.png" class="logo" alt="img"><a class="navbar-brand" href="#"></a>
+       </div>
+        <ul class="nav navbar-nav" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="form.html">Form</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                   
+                </ul>
+</div>
+<div class = "text-container">
+  <p>Quiz</p>
+</div>
+
+
+<!--colors: c2cae8, 9bdeac, b4e7ce, 74b3ce, 45f0df 
+https://www.wanderu.com/blog/most-sustainable-way-to-travel/-->
+
+<div class = "quiz-container">
+  <div id = "sustainable">
+      <section class = "sustainability-quiz">
+        <h2>How sustainable are you?</h2>
+        <form class = "quiz">
+          <article class = "question-one">
+            <br>
+            <h4>1. Choose your mode of transportation. </h4>
+            <br>
+            <input type="radio" name="Q1" value=0 class="Q1OP1" required>
+            <label for="Q1OP1">Bus</label> <br>
+            <input type="radio" name="Q1" value=1 class="Q1OP2" required>
+            <label for="Q1OP2">Commercial Airplane</label> <br>
+            <input type="radio" name="Q1" value=2 class="Q1OP3" required>
+            <label for="Q1OP3">Gas-Powered Car</label> <br>
+            <input type="radio" name="Q1" value=3 class="Q1OP4" required>
+            <label for="Q1OP4">Biking and Walking</label> <br>
+          </article> 
+          <article class="question-two">
+            <br>
+            <h4>2. Pick a food. </h4>
+            <br>
+            <input type="radio" name="Q2" value="Option 1" class="Q2OP1" required>
+            <label for="Q2OP1">Industrial Meat</label> <br>
+            <input type="radio" name="Q2" value="Option 2" class="Q2OP2" required>
+            <label for="Q2OP2">Coffee</label> <br>
+            <input type="radio" name="Q2" value="Option 3" class="Q2OP3" required>
+            <label for="Q2OP3" required>Cheese</label> <br>
+            <input type="radio" name="Q2" value="Option 4" class="Q2OP4" required>
+            <label for="Q2OP4">Pulses and Beans</label> <br>
+          </article>
+          <article class="question-three">
+            <br>
+            <h4>3. You are running late for work but realize you forgot to turn of the lights. Which of the following do you do in this scenario? </h4>
+            <br>
+            <input type="radio" name="Q3" value="Option 1" class="Q3OP1">
+            <label for="Q3OP1">Run back home and turn of the lights!</label> <br>
+            <input type="radio" name="Q3" value="Option 2" class="Q3OP2" >
+            <label for="Q3OP2">Begin your drive to work because you are running late!</label> <br>
+            <input type="radio" name="Q3" value="Option 3" class="Q3OP3" >
+            <label for="Q3OP3">I will come back during my lunch break!</label> <br>
+            <input type="radio" name="Q3" value="Option 4" class="Q3OP4" >
+            <label for="Q3OP4">It is okay!</label> <br>
+          </article>
+          <article class="question-four">
+            <br>
+            <h4>4. How would you dispose of e-waste? </h4>
+            <br>
+            <input type="radio" name="Q3" value="Option 1" class="Q3OP1">
+            <label for="Q3OP1">Throw it in the trash</label> <br>
+            <input type="radio" name="Q3" value="Option 2" class="Q3OP2">
+            <label for="Q3OP2">Leave it somewhere in your home</label> <br>
+            <input type="radio" name="Q3" value="Option 3" class="Q3OP3">
+            <label for="Q3OP3">Flush it down the toilet</label> <br>
+            <input type="radio" name="Q3" value="Option 4" class="Q3OP4">
+            <label for="Q3OP4">Give it to a store/ environmental department</label> <br>
+          </article>
+        
+          <br>
+          
+
+        <input class="submitquiz" type="button" value="Show Results">
+        
+        <section class="results-container"></section>
+        
+        </form>
+      </section>
+      </div>
+</div>
+
+  
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>
